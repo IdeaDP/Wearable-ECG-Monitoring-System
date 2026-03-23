@@ -4,10 +4,10 @@ MCU and Bluetooth module selection
 -MCU+BLE module
 -STM32 + HM10 
 
-#Option 2
+# Option 2
 -ESP32 S3 SoC
 
 
 **Product**
-#Option 3
+# Option 3
 -nRF5282 SoC
