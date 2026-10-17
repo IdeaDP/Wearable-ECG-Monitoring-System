@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "ecg_stm32f103",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"stm32cube-ide-clangd.path": "cube"
+	}
+}
