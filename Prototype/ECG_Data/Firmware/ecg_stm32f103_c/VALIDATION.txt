@@ -1,0 +1,24 @@
+Target: STM32F103C8T6, Cortex-M3, 64 KiB flash / 20 KiB SRAM
+Compiler: xPack GNU Arm Embedded GCC 12.3.1
+Dependency: installed framework-stm32cubef1 1.8.6 (HAL 1.1.10)
+Build: C11, -O2, application -Wall -Wextra -Werror
+Result: complete firmware compiled and linked, no warnings in final build
+Image size: text 10736 bytes, data 12 bytes, bss 628 bytes
+Flash image: 10748 bytes
+Linker: RX flash and RW RAM segments, no undefined symbols
+No __aeabi floating-point helper, malloc, or C++ allocation symbols found
+
+PASS 10-bit baseline: 250000 pseudorandom samples, maximum reference difference 1 count
+PASS 12-bit baseline: 250000 pseudorandom samples, maximum reference difference 1 count
+PASS DC startup/reset/settling and sample bounds
+PASS signed little-endian packet encoding
+PASS all sequence values and additive checksums
+PASS DMA half/full block callbacks
+PASS queue order, capacity, overflow and sequence rollover
+PASS UART start failure retry and transmission timeout
+PASS ADC fault and rail accounting
+PASS one-shot LED sequence, including time wrap after completion
+
+Host pipeline checks use a mocked HAL. Analog accuracy, clock stability,
+physical interrupt timing, HM-10 command acceptance and BLE delivery require
+board validation. The PlatformIO configuration was not separately built.
